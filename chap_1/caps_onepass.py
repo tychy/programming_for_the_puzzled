@@ -4,8 +4,12 @@ cap2 = ['F', 'F', 'B', 'B', 'B', 'F',
 'B', 'B', 'B', 'F', 'F', 'F', 'F']
 
 cap3 = ['F', 'B', 'F']
+cap4 = []
  # F B F B
 def pleaseConform(caps):
+    if caps == []:
+        print('caps is []')
+        return
     caps = caps + [caps[0]]
     for i in range(1, len(caps)):
         if caps[i] != caps[i - 1]:
@@ -18,4 +22,4 @@ def pleaseConform(caps):
                     print('through ', i - 1, ',please flip your caps')
 
 
-pleaseConform(cap3)
+pleaseConform(cap4)
